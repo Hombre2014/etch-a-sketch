@@ -9,18 +9,79 @@
     align-items: center;
 }
 
+#panel {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #mainBlock {
     display: grid;
     grid-template-columns: repeat(var(--columnNumber), 1fr);
     grid-template-rows: repeat(var(--rowNumber), 1fr);
     width: 512px;
     height: 512px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin-top: 1rem;
     border: 1px black solid;
 }
 
 .singleCell {
     display: block;
-    border: solid 1px rgb(223, 222, 222);
+    border: solid 1px rgb(238, 238, 238);
+}
+
+.btn {
+    height: auto;
+    padding: 4px;
+}
+
+#rgbColor, #greyColor {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    width: auto;
+    height: 22px;
+    border-radius: 4px;
+}
+
+#singleColor, #rgbColor, #greyColor {
+    width: 34px;
+    height: 18px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#singleColor:hover, #rgbColor:hover, #greyColor:hover {
+    background-color: white;
+    box-shadow: 4px 4px 3px rgba(28, 32, 32, 0.5);
+    
+}
+
+body {
+    background-color: dimgrey;
+}
+
+#insideColor, #insideGrey {
+    width: 24px;
+    height: 7px;
+    margin: 4px auto;
+    border: 1px solid black;
+}
+
+#insideColor {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+#insideGrey {
+    background-image: linear-gradient(to right, lightgrey, rgb(68, 66, 66));
+}
+
+#clr {
+    margin-right: 8px;
 }

@@ -10,15 +10,21 @@
 <body>
     <div id="container">
         <h1>Etch a Sketch project</h1>
-        <div id="buttons">
-            <button id="clearScreen" class="btn">Clear Screen</button>
-            <button id="SingleColor" class="btn">Single Color</button>
-            <button id="RandomColor" class="btn">Random Color</button>
-            <button id="GreyScale"   class="btn">Grey Scale</button>
-            <button id="EnterSize"   class="btn" onclick="inputSize()">EnterSize</button>
-        </div>
-        <div id="mainBlock">
-            
+        <div id="panel">
+            <div id="buttons">
+                <button id="clearScreen" class="btn" onclick="clearGrid()">Reset</button>
+                <button id="SingleColor" class="btn"><span id="clr">Choose Color</span><input type="color" id="singleColor" value="#88FF22"></button>
+                <button id="RandomColor" class="btn" onclick="randomColor()">RGB<div id="rgbColor">
+                    <div id="insideColor"></div>
+                </div></button>
+                <button id="GreyScale" class="btn" onclick="greyScale()">Grey Scale<div id="greyColor">
+                    <div id="insideGrey"></div>
+                </div></button>
+                <button id="EnterSize" class="btn" onclick="inputSize()">Size <span id="size">16</span></button>
+            </div>
+            <div id="mainBlock">
+                
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
