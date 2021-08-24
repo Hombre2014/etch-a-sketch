@@ -16,7 +16,7 @@ body {
 #panel {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 #buttons {
@@ -86,4 +86,18 @@ body {
 
 #clr {
     margin-right: 8px;
+}
+
+#profile {
+    width: 32px;
+    height: auto;
+    margin: 0 1rem;
+}
+
+#mark {
+    margin-left: 1rem;
+}
+
+#copyright {
+    margin-top: 6rem;
 }

@@ -13,7 +13,7 @@
         <h1>Etch a Sketch project</h1>
         <div id="panel">
             <div id="buttons">
-                <button id="clearScreen" class="btn" onclick="clearGrid()">Reset</button>
+                <button class="btn" onclick="clearGrid()">Clear</button>
                 <button id="SingleColor" class="btn"><span id="clr">Choose Color</span><input type="color" id="singleColor" value="#88FF22"></button>
                 <button id="RandomColor" class="btn" onclick="randomColor()">RGB<div id="rgbColor">
                     <div id="insideColor"></div>
@@ -27,6 +27,12 @@
                 
             </div>
         </div>
+        <footer>
+            <div id="copyright">
+                <span>Made by Hombre2014</span><a href="https://github.com/Hombre2014"><img id="profile" src="images/profile_photo.jpg"></a>
+                <span id="source">Source on GitHub</span><a href="https://github.com/Hombre2014/etch-a-sketch"><img id="mark" src="images/GitHub-Mark-32px.png"></a>
+            </div>
+        </footer>
     </div>
     <script src="main.js"></script>
 </body>
